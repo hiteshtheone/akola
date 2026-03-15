@@ -3,9 +3,15 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 import psycopg2
 from psycopg2.extras import RealDictCursor
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
+
+
+
+# Add this right after app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Database connection helper
 def get_db():
