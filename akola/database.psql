@@ -1,0 +1,1 @@
+nerdctl exec -it my-postgres psql -U postgres -c "CREATE TABLE products (id SERIAL PRIMARY KEY, name VARCHAR(100));"

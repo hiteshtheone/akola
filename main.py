@@ -31,7 +31,7 @@ async def read_index(request: Request):
 async def submit_lead(
     name: str = Form(...), 
     email: str = Form(...), 
-    goal: str = Form(...)
+    subject: str = Form(...)
 ):
     # Insert data into PostgreSQL
     conn = get_db()
