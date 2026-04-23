@@ -1,3 +1,4 @@
 akola/
 .DS_Store
 djangoAkola/db.sqlite3
+djangoAkola/staticfiles/

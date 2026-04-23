@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,7 +89,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), url('/static/images/goa_finish.jpeg?q=80&w=1470&auto=format&fit=crop') center/cover;
+            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), url({% static 'images/goa_finish.jpeg' %}?q=80&w=1470&auto=format&fit=crop) center/cover;
             padding: 0 5%;
         }
 
@@ -265,7 +266,7 @@
 
     <section id="about" class="section-padding">
         <div class="about-image">
-            <span style="color: var(--mid-grey); font-style: italic;"><img src="/static/images/malaysia_jump1.jpeg"  width="500" height="380"></span>
+            <span style="color: var(--mid-grey); font-style: italic;"><img src="{% static 'images/malaysia_jump1.jpeg' %}"  width="500" height="380"></span>
         </div>
         <div class="about-content">
             <h2 class="section-title" style="text-align:">About <span class="text-red">Me</span></h2>
